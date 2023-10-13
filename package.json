@@ -1,0 +1,47 @@
+{
+  "name": "create-okta-app",
+  "version": "0.1.0",
+  "description": "A CLI to create an Okta Service App via Okta's API",
+  "main": "index.js",
+  "bin": {
+    "create-okta-app": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && ncc build -m lib/index.js",
+    "clean": "rm -rf node_modules && rm -rf lib",
+    "help": "node dist/index.js --help"
+  },
+  "author": "Indent Inc <open@indent.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/indent-testing/create-okta-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indent-testing/create-okta-app.git"
+  },
+  "files": ["src", "dist", "package.json"],
+  "keywords": [
+    "axios",
+    "CLI",
+    "Indent",
+    "ncc",
+    "node",
+    "OAuth2.0",
+    "Okta",
+    "typescript",
+    "yargs"
+  ],
+  "engines": {
+    "node": ">=16.9.1",
+    "npm": ">=7.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.1",
+    "@types/yargs": "^17.0.3",
+    "@vercel/ncc": "^0.31.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "yargs": "^17.1.1"
+  }
+}

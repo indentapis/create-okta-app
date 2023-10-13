@@ -1,0 +1,21 @@
+# Build files
+lib/
+dist/
+
+# Lockfiles
+package-lock.json
+yarn.lock
+
+# Secrets
+jwk.json
+key*
+*.pem*
+*.env*
+!.env.example
+
+# Dependencies
+node_modules
+
+# Logs and system files
+*.log
+.DS_Store
